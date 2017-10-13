@@ -55,8 +55,9 @@ def splitLogs(megaByte, inputPath, outputPath):
 
 	for root, dirs, files in os.walk(inputPath):
 		for fileName in files:
-			thread = multiprocessing.Process(target = splitStart,args=(megaByte, inputPath, outputPath, fileName))
-			threads.append(thread)
+			if fileName != ".gitignore":
+				thread = multiprocessing.Process(target = splitStart,args=(megaByte, inputPath, outputPath, fileName))
+				threads.append(thread)
 
 	for t in threads:
 		t.start()
