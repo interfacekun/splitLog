@@ -16,3 +16,10 @@ python splitLog.py
 python splitLog.py
 ```
 #### 3.解压后的日志文件在slicesLogs文件夹下
+
+
+## 参数说明  
+	python spliteLog.py [options]
+	-m size, 以 size MB的大小分割日志，默认是10  
+	-i path, 指定所需分割日志所在的目录，默认是./rawLogs
+	-o path, 指定分割后日保存的目录,默认是./slicesLogs
