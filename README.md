@@ -21,5 +21,9 @@ python splitLog.py
 ## 参数说明  
 	python spliteLog.py [options]
 	-m size, 以 size MB的大小分割日志，默认是10  
-	-i path, 指定所需分割日志所在的目录，默认是./rawLogs
-	-o path, 指定分割后日保存的目录,默认是./slicesLogs
+	-i path, 指定所需分割日志所在的目录，默认是./rawLogs  
+	-o path, 指定分割后日保存的目录,默认是./slicesLogs  
+## 中文乱码  
+	如果分割后的日志文件用Sublime打开出现中文乱码，可以调整编码格式为UTF-8。  
+	步骤如下(Sublime Text):  
+	File --> Reopen with Encoding --> UTF-8
